@@ -21,8 +21,8 @@ global:
     ## @param global.app.url route53 url's for default and tenant app 
     ##
     url:
-      default: <<emarket_domain>>
-      domain: .<<YOUR_DOMAIN>>
+      default: msa-emarket.leebalso.click
+      domain: .leebalso.click
   ## @param global.env.kubernetes.enabled to enable the deployment cluster env
   ##
   image:
@@ -105,7 +105,7 @@ global:
   sql:
     ## @param global.sql.host AWS RDS service endpoint
     ##
-    host: <<mariadb_endpoint>>
+    host: hennry-keycloackdb.cf7fycqlofzj.us-east-1.rds.amazonaws.com
     ## @param global.sql.port AWS RDS service port
     ##
     port: 3306
@@ -113,7 +113,7 @@ global:
       ## @param global.sql.common.user AWS RDS service username
       ##
       user: admin
-      pwd: <<mariadb_user_password>>
+      pwd: SoMIEg3cKN
       pid: Developer
   mongo:
     architecture: standalone
@@ -126,7 +126,7 @@ global:
     ##
     standalone:
       port: 6379
-      svc: <<redis_cluster_endpoint>>
+      svc: hennry-redis-cluster.8zagg1.0001.use1.cache.amazonaws.com
   eventbus:
       svc:  rabbitmq
       constr:  rabbitmq
